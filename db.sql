@@ -7,9 +7,3 @@ USE estaciones_SIATA;
 
 -- Vaciar las tablas
 DROP TABLE IF EXISTS estaciones;
-
--- Crear tablas
-CREATE TABLE estaciones	(
-	id MEDIUMINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    nombre TINYTEXT NOT NULL
-);  
