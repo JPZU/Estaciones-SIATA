@@ -4,6 +4,7 @@ from django.db import models
 
 
 class Estaciones(models.Model):
+    # Garantiza que los numeros sean de 1 a 99.........
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=200)
     ubicacion = models.JSONField()  # almacena un json
