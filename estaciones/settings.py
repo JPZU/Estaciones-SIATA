@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'api',
     # Agrego rest_framwork
     'rest_framework',
+    # django extensions
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
