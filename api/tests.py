@@ -48,7 +48,6 @@ class CercanasViewSetTest(TestCase):
         url = reverse("cercanas-retrieve",
                       kwargs={"id": self.estacion_base.id}
                       )
-
         # Hacer una solicitud GET a la URL
         response = self.client.get(url)
 
