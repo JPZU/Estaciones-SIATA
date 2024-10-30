@@ -28,7 +28,7 @@ class EstacionesViewSetTest(TestCase):
 
 class CercanasViewSetTest(TestCase):
     def setUp(self):
-        # Crear varias estaciones con ubicaciones diferentes para probar cercanía
+        # Crear varias estaciones con ubicaciones diferentes
         self.estacion_base = Estaciones.objects.create(
             nombre="Estación Base",
             ubicacion=[0, 0]
@@ -41,20 +41,18 @@ class CercanasViewSetTest(TestCase):
             nombre="Estación Lejana",
             ubicacion=[10, 10]
         )
-        self.client = APIClient()
+        self.prueba = APIClient()
 
     def test_retrieve_cercana(self):
-        # Obtener la URL para la estación más cercana
+        # obtener la URL para la estación cercana
         url = reverse("cercanas-retrieve",
                       kwargs={"id": self.estacion_base.id}
                       )
-        # Hacer una solicitud GET a la URL
-        response = self.client.get(url)
 
-        # Comprobar que la respuesta es 200 OK
+        response = self.prueba.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-        # Verificar que la estación más cercana sea la esperada
+        # Verificar que la estación mas cercana este correcta
         estacion_cercana_serializada = EstacionesSerializer(
             self.estacion_cercana)
 

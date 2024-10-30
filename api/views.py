@@ -13,7 +13,7 @@ class EstacionesViewSet(viewsets.ModelViewSet):
 
 
 class CercanasViewSet(viewsets.ViewSet):
-    # Uso este método porque ese me permite hacer una busqueda por Id
+    # Uso este método porque ese me permite hacer una busqueda por Id, me lo da la clase viewSet
     def retrieve(self, request, pk=None):
         # sacar la estación base usando el parámetro pk
         estacion_base = Estaciones.objects.get(id=pk)
@@ -22,6 +22,7 @@ class CercanasViewSet(viewsets.ViewSet):
 
         # algoritmo: variables para encontrar la estación más cercana
         estacion_mas_cercana = None
+        # valor grande para poder partir de eso
         distancia_minima = float('inf')
 
         for estacion in Estaciones.objects.exclude(id=pk):
