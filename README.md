@@ -90,7 +90,7 @@ Accede a la aplicación en http://localhost:8000.
 
 Esta API incluye tres endpoints básicos. A continuación, se muestran sus funcionalidades:
 
-- `POST /api/v1/estaciones`: Crea una nueva estación. Este endpoint recibe un cuerpo de solicitud (body) con los datos necesarios para la estación, incluyendo nombre y ubicación. En respuesta, devuelve los datos de la estación recién creada.
+- `POST /api/v1/estaciones`: Crea una nueva estación. Este endpoint recibe un cuerpo de solicitud (body) con los datos necesarios para la estación, incluyendo nombre y ubicación. En respuesta, devuelve los datos de la estación creada.
   **Ejemplo**:
   ```bash
   {
