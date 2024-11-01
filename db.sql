@@ -5,5 +5,3 @@ CREATE DATABASE IF not EXISTS estaciones_SIATA;
 -- Seleccionar base de datos
 USE estaciones_SIATA; 
 
--- Vaciar las tablas
-DROP TABLE IF EXISTS estaciones;
