@@ -1,6 +1,6 @@
 # API-DJANGO
 
-Una API desarrollada con Django que utiliza MySQL como base de datos. Este proyecto estaba pensado para ser configurado para ejecutarse en contenedores Docker, facilitando la configuración y el despliegue, **pero no se logro usar dockerfile ni docker-compose.yml**
+Una API desarrollada con Django que utiliza MySQL como base de datos. Este proyecto estaba pensado para ser configurado y ejecutado en contenedores Docker, facilitando la configuración y el despliegue, **No se pudo implementar Dockerfile ni docker-compose.yml debido a complicaciones técnicas que llevaron a un punto sin solución para mi.**
 
 ## Tabla de Contenidos
 
@@ -14,7 +14,7 @@ Una API desarrollada con Django que utiliza MySQL como base de datos. Este proye
 
 ## Arquitectura
 
-Este proyecto utiliza una arquitectura basada en microservicios, lo cual permite modularizar la aplicación en componentes independientes y reutilizables. Gracias a la estructura de Django, cada funcionalidad puede organizarse en aplicaciones (apps) autónomas, que facilitan el desarrollo, mantenimiento y escalabilidad del proyecto. Esta organización permite que cada microservicio tenga responsabilidades específicas, lo cual optimiza la implementación de cambios y mejora la capacidad de escalar cada módulo de forma independiente.
+Este proyecto utiliza una arquitectura basada en microservicios, lo cual permite modularizar la aplicación en componentes independientes y reutilizables. Gracias a la estructura de Django, cada funcionalidad puede organizarse en aplicaciones (apps) independientes, que facilitan el desarrollo, mantenimiento y escalabilidad del proyecto. Esta organización permite que cada microservicio tenga responsabilidades específicas, lo cual optimiza la implementación de cambios y mejora la capacidad de escalar cada módulo de forma independiente.
 
 - **Django**: Framework principal para construir la API REST y organizar la aplicación en microservicios mediante apps independientes.
 - **MySQL**: Base de datos relacional.
@@ -30,7 +30,7 @@ Este proyecto utiliza una arquitectura basada en microservicios, lo cual permite
 - MySQL 8.0
 - pip
 
-Además, las dependencias están listadas en `requirements.txt`.
+Además, las dependencias están en `requirements.txt`.
 
 ## Configuración Inicial
 
